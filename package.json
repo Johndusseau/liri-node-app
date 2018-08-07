@@ -1,0 +1,27 @@
+{
+  "name": "liri-node",
+  "version": "1.0.0",
+  "description": "twitter node",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johndusseau/liri-node-app.git"
+  },
+  "keywords": [
+    "zanThunder"
+  ],
+  "author": "John Dusseau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johndusseau/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Johndusseau/liri-node-app#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {}
+}
