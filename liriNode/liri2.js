@@ -1,12 +1,15 @@
+
 require("dotenv").config();
 
-var keys = require("./key");
 
+
+
+var keys = require("./keys");
+var Twitter = require('twitter');
+var Spotify = require('node-spotify-api');
+
+var client = new Twitter(keys.twitterKeys);
 var request = require('request');
-var Twitter = require('dotenv');
-var Spotify = require('dotenv');
-var fs = require('fs');
-var client = new Twitter('dotenv');
 var input = process.argv;
 var action = input[2];
 var inputs = input[3];
@@ -71,7 +74,7 @@ function movie(inputs) {
 
 	request(queryUrl, function(error, response, body) {
 		if (!inputs){
-        	inputs = 'The Departed';
+        	inputs = 'Mr. Nobody';
     	}
 		if (!error && response.statusCode === 200) {
 
